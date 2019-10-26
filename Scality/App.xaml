@@ -5,6 +5,8 @@
              StartupUri="MainWindow.xaml">
     
     <Application.Resources>
+        <SolidColorBrush x:Key="BackgroundColor" Color="#E8ECF1"></SolidColorBrush>
+        <SolidColorBrush x:Key="MainBlue" Color="#7B9EAE"></SolidColorBrush>
         <SolidColorBrush x:Key="DarkGreen" Color="#21717E"></SolidColorBrush>
         <SolidColorBrush x:Key="LightBlue" Color="#3194A3"></SolidColorBrush>
         <SolidColorBrush x:Key="font" Color="#707070"></SolidColorBrush>

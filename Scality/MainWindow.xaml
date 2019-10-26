@@ -57,7 +57,7 @@
         </Grid>
 
 
-        <Grid Grid.ColumnSpan="2" Margin="116,0,16.333,-0.333">
+        <Grid Grid.Column="1" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="1"></RowDefinition>
                 <RowDefinition Height="2*"></RowDefinition>
@@ -102,7 +102,7 @@
                       IsIndeterminate="False" />
 
                     <TextBlock Name="divercityPercentage" Text="75 %" Foreground="{StaticResource LightBlue}" FontWeight="DemiBold" HorizontalAlignment="Center" />
-                    <TextBlock Text="GOOD" HorizontalAlignment="Center" FontWeight="Bold" Foreground="{StaticResource DarkGreen}"/>
+                    <TextBlock Name="comment" Text="GOOD" HorizontalAlignment="Center" FontWeight="Bold" Foreground="{StaticResource DarkGreen}"/>
                 </StackPanel>
 
 
@@ -127,7 +127,7 @@
                       IsIndeterminate="False" />
 
                     <TextBlock Text="58 %" Foreground="{StaticResource LightBlue}" FontWeight="DemiBold" HorizontalAlignment="Center" />
-                    <TextBlock Text="NOT GOOD" HorizontalAlignment="Center" FontWeight="Bold" Foreground="{StaticResource DarkGreen}"/>
+                    <TextBlock Text="GOOD" HorizontalAlignment="Center" FontWeight="Bold" Foreground="{StaticResource DarkGreen}"/>
                 </StackPanel>
 
                 <Border Grid.Column="4" Width="1" Background="{StaticResource DarkGreen}" HorizontalAlignment="Right"/>
@@ -173,35 +173,40 @@
                     
                     <StackPanel Orientation="Horizontal" Margin="3">
                         <ToggleButton x:Name="EthnicityBtn" Background="{StaticResource LightBlue}" 
-                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="GenderBtn_Checked"
+                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="EthnicityBtn_Checked"
+                                      Unchecked="EthnicityBtn_Unhecked"
                                       />
                         <TextBlock Text="Ethnicity" Foreground="{StaticResource font}"/>
                     </StackPanel>
                     
                <StackPanel Orientation="Horizontal" Margin="3">
                         <ToggleButton x:Name="CivilStateBtn" Background="{StaticResource LightBlue}" 
-                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="GenderBtn_Checked"
+                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="CivilStateBtn_Checked" 
+                                     Unchecked="CivilStateBtn_Unchecked"
                                       />
                         <TextBlock Text="Civil State" Foreground="{StaticResource font}"/>
                     </StackPanel>
                     
                <StackPanel Orientation="Horizontal" Margin="3">
                         <ToggleButton x:Name="ReligionBtn" Background="{StaticResource LightBlue}" 
-                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="GenderBtn_Checked"
+                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="ReligionBtn_Checked"
+                                     Unchecked="ReligionBtn_Unchecked"
                                       />
                         <TextBlock Text="Religion" Foreground="{StaticResource font}"/>
                     </StackPanel>
                     
                <StackPanel Orientation="Horizontal" Margin="3">
                         <ToggleButton x:Name="AgeBtn" Background="{StaticResource LightBlue}" 
-                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="GenderBtn_Checked"
+                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="AgeBtn_Checked" 
+                                        Unchecked="AgeBtn_Unchecked"
                                       />
                         <TextBlock Text="Age" Foreground="{StaticResource font}"/>
                     </StackPanel>
                     
                <StackPanel Orientation="Horizontal" Margin="3">
                         <ToggleButton x:Name="DisabilitiesBtn" Background="{StaticResource LightBlue}" 
-                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="GenderBtn_Checked"
+                                      Style="{StaticResource MaterialDesignSwitchToggleButton}" Checked="DisabilitiesBtn_Checked"
+                                      Unchecked="DisabilitiesBtn_Unchecked"
                                       />
                         <TextBlock Text="Disabilities" Foreground="{StaticResource font}"/>
                     </StackPanel>
